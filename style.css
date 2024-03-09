@@ -1,0 +1,154 @@
+ /* Type Selector */
+ h1 {
+    color: blue; /* Applies blue color to all <h1> elements */
+  }
+
+  /* Class Selector */
+  .highlight {
+    font-weight: bold; /* Applies bold font weight to all elements with class 'highlight' */
+  }
+
+  /* ID Selector */
+  #unique {
+    background-color: lightgray; /* Applies light gray background to the element with ID 'unique' */
+  }
+
+  /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Resets margin, padding, and box-sizing for all elements */
+  }
+
+  /* Attribute Selector */
+  a[href^="https://"] {
+    color: brown; /* Applies green color to anchor links with 'https://' in href attribute */
+  }
+
+  /* Descendant Selector */
+  .container p {
+    font-style: italic; /* Applies italic font style to <p> elements inside elements with class 'container' */
+  }
+
+  /* Child Selector */
+  .container > ul {
+    list-style-type: square; /* Applies square list style to <ul> elements directly under elements with class 'container' */
+  }
+
+  /* Adjacent Sibling Selector */
+  h2 + p {
+    color: blue; /* Applies red color to paragraphs immediately preceded by <h2> elements */
+  }
+
+  /* General Sibling Selector */
+  h2 ~ p {
+    font-weight: normal; /* Removes bold font weight from paragraphs that are siblings of <h2> elements */
+  }
+
+  /* Pseudo-class Selector */
+  a:hover {
+    text-decoration-style: double; /* doubles the underline anchor links when hovered */
+  }
+
+  /* Pseudo-element Selector */
+  p::first-line {
+    font-weight: bold; /* Applies bold font weight to the first line of paragraphs */
+  }
+
+  /* Grouping Selector */
+  h2, p {
+    font-family: Arial, sans-serif;    /* Applies Arial font family to <h2> and <p> elements */
+  }
+
+  /* Parent Selector */
+  .parent {
+    background-color: blue; /* Applies  blue background to elements with class 'parent' */
+  }
+
+  /* Child Selector */
+  .parent > .child {
+    background-color: yellow; /* Applies yellow background to children with class 'child' within elements with class 'parent' */
+  }
+
+  /* Grandchild Selector */
+  .parent .child .grandchild {
+    background-color: lightcoral; /* Applies light coral background to grandchildren with class 'grandchild' within elements with class 'child' within elements with class 'parent' */
+  }
+
+  /* Navigation List */
+  .nav-list {
+    margin-top: 20px; /* Adds top margin to elements with class 'nav-list' */
+  }
+
+  .nav-list span {
+    display: inline-block; /* Changes display property to inline-block for span elements within elements with class 'nav-list' */
+    padding: 5px 10px; /* Adds padding to span elements */
+    margin-right: 10px; /* Adds right margin to span elements */
+  }
+
+  .nav-list ul {
+    list-style-type: none; /* Removes default list styles for <ul> elements within elements with class 'nav-list' */
+    padding: 0; /* Removes padding for <ul> elements */
+    margin: 0; /* Removes margin for <ul> elements */
+  }
+
+  .nav-list li {
+    display: inline; /* Changes display property to inline for list items */
+    margin-right: 10px; /* Adds right margin to list items */
+  }
+
+  /* Custom Colors for Navigation Links */
+  .nav-list span.home {
+    color: pink; /* Applies pink color to span elements with class 'home' within elements with class 'nav-list' */
+  }
+
+  .nav-list span.products {
+    color: grey; /* Applies green color to span elements with class 'products' within elements with class 'nav-list' */
+  }
+
+  .nav-list span.contacts {
+    color: orange; /* Applies pink color to span elements with class 'contacts' within elements with class 'nav-list' */
+  }
+
+  /* New Hover Effect */
+  .hover-effect:hover {
+    background-color: purple; /* Applies purplebackground to elements with class 'hover-effect' when hovered */
+  }
+/* Selecting odd-numbered elements */
+ul li:nth-child(odd) {
+  background-color: lightblue; /* Light blue background for odd-numbered elements */
+}
+
+/* Selecting even-numbered elements, but this selects elemens in the div also, how to avoid it? */
+ul li:nth-child(even) {
+  background-color: rgb(28, 201, 43); /*  green background for even-numbered elements */
+}
+
+/* Selecting every second element */
+ul li:nth-child(2n) {
+  color: red; /* Red text color for every second element, because it does'nt interfear with odd numbers */
+}
+
+/* Selecting every second element starting from the third */
+ul li:nth-child(2n+7) {
+  color: rgba(204, 0, 255, 0.842); /* Blue text color for every second element starting from the 7th element */
+}
+
+/* Selecting the fourth element */
+ul li:nth-child(4) {
+  font-weight: bold; /* Bold font weight for only the fourth element */
+}
+
+/* Selecting the fourteenth element */
+ul li:nth-child(14) {
+  font-weight: bold;
+  color:blue; /* Bold font weight and blue color text for only the fourth element */
+}
+
+/* Selecting the first and last elements, but this will also select for element in the div */
+ul li:first-child,
+ul li:last-child {
+  text-decoration: underline;
+  font-style: oblique; 
+  font-size:larger;   /* Underline, itelic oblique stlye and bolder for the first and last elements */
+}

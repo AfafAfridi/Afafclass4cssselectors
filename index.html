@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors Demo</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1>CSS Selectors Demo</h1>
+
+<!-- Type Selector Example -->
+<h2>Type Selector</h2>
+<p>This paragraph is styled using a type selector (<code>h1</code>).</p>
+
+<!-- Class Selector Examples -->
+<h2>Class Selector</h2>
+<p class="highlight">This paragraph is styled using a class selector (<code>.highlight</code>).</p>
+
+<div class="highlight">
+  <p>This paragraph is also styled using a class selector (<code>.highlight</code>).</p>
+</div>
+
+<span class="highlight">This span is styled using a class selector (<code>.highlight</code>).</span>
+
+<!-- ID Selector Examples -->
+<h2>ID Selector</h2>
+<div id="unique">
+  <p>This div has a background color defined by its ID selector (<code>#unique</code>).</p>
+</div>
+
+<div id="unique">
+  <p>This div also has a background color defined by its ID selector (<code>#unique</code>).</p>
+</div>
+
+<div id="unique">
+  <p>This div has a background color defined by its ID selector (<code>#unique</code>).</p>
+</div>
+
+<!-- Universal Selector Example -->
+<h2>Universal Selector</h2>
+<p>This paragraph has styles applied by the universal selector (<code>*</code>).</p>
+
+<!-- Attribute Selector Example -->
+<h2>Attribute Selector</h2>
+<a href="https://www.example.com">Link to example.com</a>
+
+<!-- Descendant Selector Example -->
+<h2>Descendant Selector</h2>
+<div class="container">
+  <p>This paragraph is styled using the descendant selector (<code>.container p</code>).</p>
+</div>
+
+<!-- Child Selector Example -->
+<h2>Child Selector</h2>
+<div class="container">
+  <ul>
+    <li>List item 1</li><!-- this also has css of odd bg color light blue, first underlined, itelic -->
+    <li>List item 2</li><!-- this also has css of even, green bg, second element red text last underlined, itelic-->
+  </ul>
+  <p>This paragraph is styled using the child selector (<code>.container > ul</code>). Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda rem, iusto commodi amet dolor ducimus quo voluptatum, dolorem nesciunt voluptates neque fuga laborum reprehenderit! A facere cum repudiandae exercitationem.</p>
+</div>
+
+<!-- Adjacent Sibling Selector Example -->
+<h2>Adjacent Sibling Selector</h2>
+<h2>This is another heading</h2>
+<p>This paragraph is styled using the adjacent sibling selector (<code>h2 + p</code>).</p>
+
+<!-- General Sibling Selector Example -->
+<h2>General Sibling Selector</h2>
+<h2>Heading 2</h2>
+<p>This paragraph is styled using the general sibling selector (<code>h2 ~ p</code>).</p>
+
+<!-- Pseudo-class Selector Example -->
+<h2>Pseudo-class Selector</h2>
+<a href="https://www.example.com">Hover over this link</a>
+
+<!-- Pseudo-element Selector Example -->
+<h2>Pseudo-element Selector</h2>
+<p>This is a <span>span</span> element inside a paragraph, with the first line styled using a pseudo-element (<code>p::first-line</code>).</p>
+
+<!-- Grouping Selector Example -->
+<h2>Grouping Selector</h2>
+<h2>Heading 2</h2>
+<p>This paragraph is styled using the grouping selector (<code>h2, p</code>). Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam cumque vitae eos cupiditate maiores minus animi aliquid quibusdam illo, aliquam accusamus distinctio ab repellat id. Aut nam modi at aliquam?</p>
+
+<!-- Parent, Child, Grandchild Relations Example -->
+<h2>Parent, Child, Grandchild Relations Example</h2>
+<div class="parent">
+  <p>This div has parent, child, and grandchild relations.</p>
+  <div class="child"> <!-- Child -->
+    <p>This is the first paragraph (child).</p>
+    <div class="grandchild"> <!-- Grandchild -->
+      <p>This is the second paragraph (grandchild).</p>
+    </div>
+    <p>This is the third paragraph (child).</p>
+  </div>
+</div>
+
+<!-- Navigation List -->
+<h2>Navigation List</h2>
+<div class="nav-list">
+  <span class="home">Home</span>
+  <span class="products">Products</span>
+  <span class="contacts">Contacts</span>
+  <ul>
+    <li>Home</li><!-- underlined, larger font and itelic,first and last selected by odd ul and li css-->
+    <li>Products</li><!-- green background, by even li css-->
+    <li>Contacts</li><!-- underlined, larger font and itelic,first and last selected by odd ul and li selectors -->
+  </ul>
+</div>
+
+<!-- Additional Span Tags -->
+<span class="about">About</span>
+<span class="services">Services</span>
+
+<!-- New Hover Effect Example -->
+<h2>New Hover Effect Example</h2>
+<p class="hover-effect">Hover over this paragraph to see the effect.</p>
+
+<!-- Selecting odd-numbered elements -->
+<ul>
+  <li>Item 1</li> <!-- lightblue, underlined, larger font and itelic, default text color -->
+  <li>Item 2</li> <!-- green background and and every second element will be red text-->
+  <li>Item 3</li> <!-- lightblue-->
+  <li>Item 4</li> <!-- red text and bold -->
+  <li>Item 5</li> <!-- lightblue, plain text -->
+  <li>Item 6</li><!-- green bg, red text -->
+  <li>Item 7</li><!-- lightblue, purple text -->
+  <li>Item 8</li>
+  <li>Item 9</li>
+  <li>Item 10</li>
+  <li>Item 11</li>
+  <li>Item 12</li>
+  <li>Item 13</li>
+  <li>Item 14</li><!-- green bg, blue and bold text -->
+  <li>Item 15</li>
+  <li>Item 16</li>
+  <li>Item 17</li>
+  <li>Item 18</li>
+  <li>Item 19</li>
+  <li>Item 20</li><!-- green bg , underlined, larger font and itelic, red text -->
+</ul>
+
+
+</body>
+<!-- Explanation: -->
+<!--
+The above HTML document demonstrates various CSS selectors and their usage.
+
+1. Type Selector: Selects elements based on their tag name.
+2. Class Selector: Selects elements with a specific class attribute.
+3. ID Selector: Selects elements with a specific id attribute.
+4. Universal Selector: Selects all elements on the page.
+5. Attribute Selector: Selects elements based on their attributes.
+6. Descendant Selector: Selects elements that are descendants of a specified element.
+7. Child Selector: Selects direct children of a specified element.
+8. Adjacent Sibling Selector: Selects elements that are immediately preceded by a specified element.
+9. General Sibling Selector: Selects elements that are siblings of a specified element.
+10. Pseudo-class Selector: Selects elements based on user interaction or state.
+11. Pseudo-element Selector: Selects a specific part of an element.
+12. Grouping Selector: Groups multiple selectors to apply the same styles.
+13. Parent Selector: Selects elements that are parents of a specified element.
+14. :nth-child() Selector: Selects elements based on their position within a parent element's list of children.
+
+Each selector is applied to different elements in the HTML document to demonstrate their functionality and usage.
+
+
+ul li:nth-child(odd) selects every odd-numbered <li> element within the <ul> and applies a light blue background color.
+ul li:nth-child(even) selects every even-numbered <li> element within the <ul> and applies a green background color.
+ul li:nth-child(2n) selects every second <li> element within the <ul> and applies a red color.
+ul li:nth-child(2n+7) selects every second <li> element starting from the 7th one within the <ul> and applies a purple color.
+ul li:nth-child(4) selects the fourth <li> element within the <ul> and applies a bold font weight.
+ul li:nth-child(1) selects the first <li> element within the <ul> and ul li:last-child selects the last <li> element, 
+both applying an underline, itelic and larger font size to their text.this selects in the div block also.
+
+
+Each selector is applied to different elements in the HTML document to demonstrate their functionality and usage.
+-->
+</html>
